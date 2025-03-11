@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+## 项目介绍
+CSDN 是一个基于 EDU-CHAIN 链构建的去中心化内容创作平台，旨在为 Web3 开发者、爱好者和学习者提供一个集知识分享、技术交流、职业发展于一体的综合社区。通过结合区块链技术与内容创作的灵活性，Web3Hub 不仅是一个技术博客平台，更是一个支持创作者经济、促进 Web3 人才成长的创新空间。
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 项目技术栈
+- 前端：React + Ant Design
+- 后端：Node.js + Express
+- 数据库：MongoDB
+- 智能合约：Solidity
 
-## Available Scripts
+## 项目功能
+- 去中心化内容发布
+用户可以基于 EDU-CHAIN 链发布技术博客、教程、项目案例等内容，所有内容通过区块链技术进行存储和验证，确保内容的真实性和不可篡改。
 
-In the project directory, you can run:
+- Web3 知识库与学习路径
+平台提供丰富的 Web3 学习资源，涵盖智能合约开发、区块链技术、DeFi、NFT 等领域。同时，为初学者和进阶开发者提供定制化的学习路径。
 
-### `npm start`
+- 代币激励机制
+平台通过代币化激励机制，创作者可以通过发布高质量内容获得代币奖励，读者也可以通过打赏支持创作者。代币经济模型将基于 EDU-CHAIN 链实现，确保激励机制的透明性和去中心化。
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Web3 职业发展支持
+平台提供开发者职位推荐、项目合作机会以及个人品牌建设工具，帮助用户在 Web3 领域找到合适的工作或合作伙伴。
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 社区与社交功能
+用户可以关注其他创作者、参与讨论、加入兴趣小组，形成一个活跃的 Web3 开发者社区。
 
-### `npm test`
+- 智慧问答
+用户可以借助AI技术进行智慧问答，获取技术问题的解答和指导。
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 项目愿景
+BCDN 致力于成为 Web3 领域的权威知识平台，帮助开发者和爱好者更好地学习、交流和成长。通过去中心化的技术架构和激励机制，我们希望构建一个更加开放、透明且可持续发展的内容创作社区，推动 Web3 技术的普及和发展。
