@@ -8,6 +8,30 @@ import {
   CalendarOutlined,
   BulbOutlined
 } from '@ant-design/icons';
+import styled from 'styled-components';
+
+const StyledMenu = styled(Menu)`
+  && { 
+    // 使用 && 提高 CSS 优先级
+    border-bottom: none;
+    
+    .ant-menu-item {
+      &:hover {
+        color: #000 !important;
+      }
+      
+      &.ant-menu-item-selected {
+        font-weight: bold !important;
+        color: #000 !important;
+        background-color: #f0f0f0!important;
+        
+        &::after {
+          display: none !important;
+        }
+      }
+    }
+  }
+`;
 
 const items = [
   {
@@ -49,7 +73,7 @@ export default function MenuLeft() {
 
   return (
     <div>
-      <Menu className="text-left no-right-border" onClick={onClick} selectedKeys={[current]} mode="inline" items={items} overflowedIndicator={null} />
+      <StyledMenu className="text-left no-right-border" onClick={onClick} selectedKeys={[current]} mode="inline" items={items} overflowedIndicator={null} />
     </div>
   )
 }

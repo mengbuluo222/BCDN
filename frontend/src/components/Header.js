@@ -10,26 +10,30 @@ export default function Header() {
   const onSearch = (value) => console.log(value);
   return (
     <div className="h-[48px] shadow-md flex justify-between items-center px-4" style={{ background: "#fff" }}>
-      {/* 左侧占位 */}
-      <div className="flex-1"></div>
       
       {/* 搜索框 */}
-      <div className="flex justify-center flex-1">
+      <div className="w-full flex justify-center">
         <Search 
           placeholder="input search text" 
           onSearch={onSearch} 
           allowClear 
-          className="w-full max-w-[600px]" 
+          className="w-full max-w-[700px]" 
+          style={{
+            width: '50%'
+          }}
         />
       </div>
 
       {/* 右侧内容 */}
-      <div className="flex-1 flex justify-end items-center space-x-4">
-        <LanguageSwitcher />
-        <Button color="primary" variant="solid">
-          Connect
-        </Button>
-      </div>
+      <div className="flex justify-end items-center space-x-4" style={{
+        position: "absolute",
+        right: "10px",
+      }}>
+          <LanguageSwitcher />
+          <Button color="primary" variant="solid">
+            Connect
+          </Button>
+        </div>
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Layout, Input, Button } from 'antd';
 
-function Search() {
+const Search = () => {
   const [searchTerm, setSearchTerm] = React.useState('');
 
   const handleSearch = () => {
