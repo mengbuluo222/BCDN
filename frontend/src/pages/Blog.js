@@ -19,11 +19,11 @@ const Blog = () => {
     {
       id: 1,
       author: {
-        name: "乐闻x",
+        name: "sunny",
         avatar: "/avatar1.jpg"
       },
-      title: "微前端最佳实践：Module Federation 的使用步骤详解",
-      description: "在前端开发领域，微前端（Micro Frontends）是一种将单一前端应用拆分成多个小型、独立且可独立部署的...",
+      title: "EDU Chain Semester 3 Hackathon Ideathon 1: What to build in DeFi now Recap",
+      description: "With the launch of the EDU Chain Semester 3 Hackathon, HackQuest hosted an insightful discussion featuring experts from Animoca, OpenCampus, Blend, and HackQuest, including Harry,...",
       coverImage: require('@/assets/images/test.png'),
       stats: {
         views: 571,
@@ -32,40 +32,40 @@ const Blog = () => {
       }
     },
     {
-      id: 2,
+      id: 1,
       author: {
-        name: "乐闻x",
+        name: "sunny",
         avatar: "/avatar1.jpg"
       },
-      title: "微前端最佳实践：Module Federation 的使用步骤详解",
-      description: "在前端开发领域，微前端（Micro Frontends）是一种将单一前端应用拆分成多个小型、独立且可独立部署的...",
+      title: "EDU Chain Semester 3 Hackathon Ideathon 1: What to build in DeFi now Recap",
+      description: "With the launch of the EDU Chain Semester 3 Hackathon, HackQuest hosted an insightful discussion featuring experts from Animoca, OpenCampus, Blend, and HackQuest, including Harry,...",
       coverImage: require('@/assets/images/test.png'),
       stats: {
         views: 571,
         likes: 15,
         bookmarks: 13
       }
-    },
+    }
     // ... 其他博客文章
   ];
 
   const recommendedAuthors = [
     {
-      name: "csdn业界要闻",
-      description: "TA很懒，还没有添加简介",
+      name: "NNN",
+      description: "He is lazy and hasn't added a profile yet",
       avatar: "/author1.jpg"
     },
     // ... 其他推荐作者
   ];
   const tabslist = [
-    { label: '推荐', key: 'all' },
+    { label: 'Recommended', key: 'all' },
     { label: '付费专栏', key: 'blockchain' },
     { label: 'VIP文章', key: 'contract' }
   ];
   const ButtonList = [
-    { label: '全部', key: 'all' },
-    { label: '区块链', key: 'blockchain' },
-    { label: '智能合约', key: 'contract' }
+    { label: 'All', key: 'all' },
+    { label: 'Blockchain', key: 'blockchain' },
+    { label: 'Contract', key: 'contract' }
   ];
 
   const onTabClick = (item, index) => {
@@ -81,7 +81,7 @@ const Blog = () => {
   return (
     <div>
       {/* 顶部导航 */}
-      <Tabs tabslist={tabslist} onTabClick={onTabClick} />
+      {/* <Tabs tabslist={tabslist} onTabClick={onTabClick} /> */}
 
       <Row className="mt-4">
         <Col span={24}>
@@ -110,9 +110,9 @@ const Blog = () => {
                   <h2 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '8px' }}>{post.title}</h2>
                   <p style={{ color: '#666', marginBottom: '12px' }}>{post.description}</p>
                   <div style={{ display: 'flex', gap: '20px', color: '#666' }}>
-                    <span><EyeOutlined /> 阅读 {post.stats.views}</span>
-                    <span><LikeOutlined /> {post.stats.likes} 赞</span>
-                    <span> 收藏 {post.stats.bookmarks}</span>
+                    <span><EyeOutlined /> read {post.stats.views}</span>
+                    <span><LikeOutlined /> {post.stats.likes} praise</span>
+                    <span> collect {post.stats.bookmarks}</span>
                     <MoreOutlined />
                   </div>
                 </Col>
@@ -136,7 +136,7 @@ const Blog = () => {
         {/* 右侧作者推荐 */}
         <Col span={6}>
           <div style={{ position: 'sticky', top: '20px' }}>
-            <h3 style={{ marginBottom: '20px', fontWeight: 'bold' }}>作者推荐</h3>
+            <h3 style={{ marginBottom: '20px', fontWeight: 'bold' }}>Author recommendation</h3>
             {recommendedAuthors.map((author, index) => (
               <div key={index} style={{ display: 'flex', alignItems: 'center', marginBottom: '20px', justifyContent: 'space-between' }}>
                 <div style={{ display: 'flex', alignItems: 'center' }}>
@@ -146,7 +146,7 @@ const Blog = () => {
                     <div style={{ fontSize: '12px', color: '#666' }}>{author.description}</div>
                   </div>
                 </div>
-                <Button className="text-xs" size="small">关注</Button>
+                <Button className="text-xs" size="small">follow</Button>
               </div>
             ))}
           </div>

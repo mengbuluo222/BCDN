@@ -35,21 +35,21 @@ const StyledMenu = styled(Menu)`
 
 const items = [
   {
-    label: <Link to="/home">首页</Link>,
+    label: <Link to="/home">Home</Link>,
     key: 'home',
     icon: <HomeOutlined />
   },
   {
-    label: <Link to="/blog">博客</Link>,
+    label: <Link to="/blog">Blog</Link>,
     key: 'blog',
     icon: <BookOutlined />
   },{
-    label: <Link to="/learning">学习</Link>,
+    label: <Link to="/learning">Learn</Link>,
     key: 'learning',
     icon: <CalendarOutlined />
   },
   {
-    label: <Link to="/quiz">智慧问答</Link>,
+    label: <Link to="/quiz">Quiz</Link>,
     key: 'quiz',
     icon: <BulbOutlined />
   },
@@ -59,7 +59,7 @@ const items = [
   //   icon: <FileTextOutlined />
   // },
   {
-    label: <Link to="/invite">招聘</Link>,
+    label: <Link to="/jobs">Jobs</Link>,
     key: 'invite',
     icon: <ToolOutlined />
   },

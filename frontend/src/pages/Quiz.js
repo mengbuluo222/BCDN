@@ -16,32 +16,32 @@ const Quiz = () => {
         {
             id: 1,
             title: 'npm换源',
-            description: '如何更换npm的源'
+            description: 'How do I register for Our b3 Wallet？'
         },
         {
             id: 2,
             title: '如何注册cnpm',
-            description: '如何注册cnpm账号'
+            description: 'How do I save my we b3 wallet？'
         },
         {
             id: 6,
             title: 'nextjs 静态博客',
-            description: '如何使用Next.js搭建静态博客'
+            description: 'What is blockchain？'
         },
         {
             id: 3,
             title: 'npm换源',
-            description: '如何更换npm的源'
+            description: 'What is a block'
         },
         {
             id: 4,
             title: '如何注册cnpm',
-            description: '如何注册cnpm账号'
+            description: 'What can Blockchain do'
         },
         {
             id: 5,
             title: 'nextjs 静态博客',
-            description: '如何使用Next.js搭建静态博客'
+            description: 'What is a NFT'
         },
     ];
 
@@ -49,14 +49,14 @@ const Quiz = () => {
         <div style={{ padding: '20px' }}>
             {/* Logo and Title */}
             <div style={{ textAlign: 'center', marginBottom: '20px' }}>
-                <strong className="text-2xl">B智答</strong>
-                <h3 className="mt-2">web3开发者的首选AI搜索引擎</h3>
+                <strong className="text-2xl">B Intelligent answer</strong>
+                <h3 className="mt-2">The AI search engine of choice for web3 developers</h3>
             </div>
 
             {/* Search Box */}
             <div style={{ border: '2px solid #845EF7', borderRadius: '8px', padding: '20px', marginBottom: '20px' }}>
                 <StyledInput 
-                    placeholder="输入提问内容..." 
+                    placeholder="Input your qustion..." 
                     style={{
                         width: '100%', 
                         marginBottom: '10px', 
@@ -75,7 +75,7 @@ const Quiz = () => {
             </div>
 
             {/* Recommended Questions */}
-            <h5>你可以试试这样问我</h5>
+            <h5>You can try asking me that</h5>
             <Row className="mt-2" gutter={[16, 16]}>
                 {recommendedQuestions.map((question) => (
                     <Col className="text-xs" span={8}>

@@ -29,24 +29,24 @@ const Invite = () => {
     {
       id: 1,
       logo: 'https://placehold.co/60x60',
-      title: '品牌经理',
+      title: 'Brand manager',
       company: 'Miners Club (30+ Staff)',
-      location: '远程',
-      type: '全职',
+      location: 'remote',
+      type: 'fulltime',
       salary: '$3,000 - $5,000 / month',
       time: 'a day ago',
-      more: '更多'
+      more: 'more'
     },
     {
       id: 7,
       logo: 'https://placehold.co/60x60',
-      title: '首席运营官',
+      title: 'Chief operating officer',
       company: 'Coinstore (100+ Staff)',
-      location: '实地',
-      type: '全职',
+      location: 'On-Site',
+      type: 'fulltime',
       salary: '$11,000 - $15,000 / month',
       time: 'a day ago',
-      more: '更多'
+      more: 'more'
     }
   ];
 

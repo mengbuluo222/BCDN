@@ -9,7 +9,7 @@ import HomePage from './pages/Home';
 import Blog from './pages/Blog';
 import Download from './pages/Download';
 import Learning from './pages/Learning';
-import Invite from './pages/Invite';
+import Invite from './pages/Jobs';
 import Quiz from './pages/Quiz';
 import Logo from './components/Logo';
 import Header from './components/Header';
@@ -73,7 +73,7 @@ function App() {
                 <Route path="/learning" element={<Learning web3={web3} />} />
                 <Route path="/quiz" element={<Quiz web3={web3} />} />
                 <Route path="/download" element={<Download web3={web3} />} />
-                <Route path="/invite" element={<Invite web3={web3} />} />
+                <Route path="/jobs" element={<Invite web3={web3} />} />
               </Routes>
             </Content>
             {/*  */}

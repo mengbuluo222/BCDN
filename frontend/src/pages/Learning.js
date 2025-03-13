@@ -45,7 +45,7 @@ const CourseDesc = styled.p`
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  height: 54px; // 给定固定高度
+  height: 64px; // 给定固定高度
 `;
 
 const PriceTag = styled.span`
@@ -71,8 +71,8 @@ const Learning = () => {
   const courses = [
     {
       id: 1,
-      title: '保捷的C++系列精品课',
-      description: '讲师介绍: 保捷先生两岸著名技术教育者，计算机图书作者，译者，书评人。著有《深入浅出MFC》、《多态与继承》、《STL源码剖析》、《元素任务》等',
+      title: 'Web3 General Fundamentals course',
+      description: "This article will take you inside the world of Web3. Let's start with the birth of Web3.",
       price: 499.00,
       studentsCount: 349158,
       lessonsCount: 41,
@@ -81,34 +81,34 @@ const Learning = () => {
     },
     {
       id: 2,
-      title: '迈向数据科学家：Python数据分析零基础入门',
-      description: '讲师介绍: 苏州研途教育科技有限公司CTO，苏州大学应用统计专业硕士生指导委员会委员，已出版《跟老齐学Python》、轻松入门》《跟老齐学Python数据分析》等',
+      title: 'Web3 General Fundamentals course',
+      description: "This article will take you inside the world of Web3. Let's start with the birth of Web3.",
       price: 69.00,
       studentsCount: 116152,
       lessonsCount: 21,
       tag: '套餐课',
-      coverImage: require('@/assets/images/test.png'),
+      coverImage: require('@/assets/images/test2.png'),
     },
     // ... 更多课程
   ];
 
   return (
     <>
-      <h2 className="text-xl font-bold mb-4">推荐内容</h2>
+      <h2 className="text-xl font-bold mb-4">Recommended</h2>
       <Row gutter={[16, 16]}>
         {courses.map(course => (
           <Col xs={24} sm={12} md={8} lg={6} key={course.id}>
             <CourseCard
               cover={
-                <div style={{ position: 'relative' }}>
+                <div style={{ position: 'relative', overflow: 'hidden' }}>
                   <img
                     alt={course.title}
                     src={course.coverImage}
-                    style={{ width: '100%', height: '160px', objectFit: 'cover' }}
+                    style={{ width: '100%', height: '160px', objectFit: 'cover', borderRadius: '8px 8px 0 0' }}
                   />
-                  <CourseTag color={course.tag === '套餐课' ? '#ff9800' : '#1890ff'}>
+                  {/* <CourseTag color={course.tag === '套餐课' ? '#ff9800' : '#1890ff'}>
                     {course.tag}
-                  </CourseTag>
+                  </CourseTag> */}
                 </div>
               }
               bodyStyle={{ padding: '12px' }}
@@ -117,9 +117,8 @@ const Learning = () => {
               <CourseDesc>{course.description}</CourseDesc>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <div>
-                  <PriceTag>¥{course.price.toFixed(2)}</PriceTag>
-                  <StatsInfo>
-                    共{course.lessonsCount}门课 · {course.studentsCount}人学习
+                  {/* <PriceTag>¥{course.price.toFixed(2)}</PriceTag> */}
+                  <StatsInfo>Sum {course.lessonsCount} lesson · {course.studentsCount} person learning
                   </StatsInfo>
                 </div>
               </div>
