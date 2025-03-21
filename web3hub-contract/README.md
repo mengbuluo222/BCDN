@@ -13,4 +13,3 @@ npx hardhat node // 启动本地节点
 npx hardhat run scripts/deploy.js --network localhost  // 部署合约到localhost
 npx hardhat run scripts/deploy.js --network opencampus // 部署合约到opencampus
 ```
-合约地址：0x7d7AD5c74C5Dd5A1933bA6f80f73ed85E472B9DC

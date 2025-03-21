@@ -3,8 +3,11 @@ import { Layout, Typography, Divider, Row, Col } from 'antd';
 import { EyeOutlined, LikeOutlined, MoreOutlined } from '@ant-design/icons';
 import Tabs from '@/components/Tabs';
 import styled from 'styled-components';
+import { useIntl } from 'react-intl';
 
 const Home = () => {
+  const intl = useIntl();
+
   const tabslist = [
     { label: 'all', key: 'all' },
     { label: 'blockchain', key: 'blockchain' },
@@ -93,6 +96,7 @@ const Home = () => {
               </BlogPost>
             ))}
           </div>
+          <h1>{intl.formatMessage({ id: 'greeting' })}</h1>
         </div>
 
         {/* 右侧侧边栏 */}

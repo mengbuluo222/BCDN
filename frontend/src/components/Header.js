@@ -23,7 +23,6 @@ export default function Header() {
           }}
         />
       </div>
-
       {/* 右侧内容 */}
       <div className="flex justify-end items-center space-x-4" style={{
         position: "absolute",

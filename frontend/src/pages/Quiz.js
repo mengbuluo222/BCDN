@@ -78,7 +78,7 @@ const Quiz = () => {
             <h5>You can try asking me that</h5>
             <Row className="mt-2" gutter={[16, 16]}>
                 {recommendedQuestions.map((question) => (
-                    <Col className="text-xs" span={8}>
+                    <Col className="text-xs" span={8} key={question.id}>
                         <div className="flex justify-between" style={{ boxShadow: "4px 4px 15px rgba(0,0,0,.1)", lineHeight: "40px", borderRadius: "5px", paddingLeft: "10px" }} key={question.id}>
                             <p>{question.description}</p>
                             <RightOutlined className="mr-2 text-xs" />

@@ -3,9 +3,9 @@ import { Row, Col, Card, Avatar, Tag, Button } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 import { Pagination } from 'antd';
 import styled from 'styled-components';
-
-const Invite = () => {
-  const InviteCard = styled(Card)`
+import { Link, useSearchParams, Route, Routes } from 'react-router-dom';
+import Learning from'./Learning';
+const InviteCard = styled(Card)`
   && {
   .ant-card-body{
     padding: 10px;
@@ -20,10 +20,12 @@ const Invite = () => {
     }
   }
 `;
-
+const Invite = () => {
   const onShowSizeChange = (current, pageSize) => {
     console.log(current, pageSize);
   };
+
+  
 
   const jobList = [
     {
@@ -96,6 +98,8 @@ const Invite = () => {
         defaultCurrent={3}
         total={500}
       />
+      <Link to="/learning?id=100">learn</Link>
+     
     </div>
   );
 };

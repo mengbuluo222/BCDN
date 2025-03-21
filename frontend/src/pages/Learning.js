@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Row, Col, Card, Tag } from 'antd';
+import { useSearchParams } from 'react-router-dom';
 
 // 样式组件
 const CourseCard = styled(Card)`
@@ -67,7 +68,9 @@ const CourseTag = styled(Tag)`
   border: none;
 `;
 
-const Learning = () => {
+const Learning = (props) => {
+  console.log(props, 'props');
+  
   const courses = [
     {
       id: 1,
@@ -91,6 +94,9 @@ const Learning = () => {
     },
     // ... 更多课程
   ];
+
+  const [ params ] = useSearchParams();
+  const id = params.get('id');
 
   return (
     <>
